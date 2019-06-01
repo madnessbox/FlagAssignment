@@ -27,7 +27,7 @@ bool GetFlag(unsigned long long &flags, char flagIndex)
 
 int GetFlags(unsigned long long &flags, unsigned long long flagsToGet)
 {
-	return flags & (1ULL << flagsToGet);
+	return flags & flagsToGet;
 }
 
 void ToggleFlag(unsigned long long &flags, char flagIndex)
